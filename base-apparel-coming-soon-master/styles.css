@@ -1,0 +1,204 @@
+@font-face {
+    font-family: josefinsans;
+    src: url(assets/fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --desaturatedRed:hsl(0, 36%, 70%);
+    --softRed:hsl(0, 93%, 68%);
+    --darkGrayishRed:hsl(0, 6%, 24%);
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: josefinsans;
+    font-size: 16px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    padding: 1.5rem 0 0 1.5rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+picture{
+    margin-top: 40px;
+    margin-left: 55px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: josefinsans;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    letter-spacing: 15px;
+    color: var(--darkGrayishRed);
+    text-align: center;
+}
+
+#were{
+    color: var(--desaturatedRed);
+    font-weight: 300;
+    letter-spacing: 15px;
+}
+
+p{
+    color: var(--desaturatedRed);
+    font-family: josefinsans;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+form{
+    position: relative;
+}
+
+form input{
+    font-family: josefinsans;
+    font-size: 16px;
+    padding: 0.8rem 1rem;
+    margin: 2rem 0 0;
+    border: 1px solid var(--desaturatedRed);
+    border-radius: 20px;
+    width: 100%;
+    color: var(--desaturatedRed);
+}
+
+form input::placeholder{
+    color: var(--desaturatedRed);
+}
+
+form label{
+    position: absolute;
+    top: 32%;
+    right: 6.5rem;
+}
+
+form button{
+    position: absolute;
+    top: 39%;
+    right: 0;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover{
+    transition: 0.3s;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 80%, 86%));
+}
+
+form label{
+    display: none;
+}
+
+.error{
+    color: var(--softRed);
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 17px;
+    display: none;
+}
+
+@media (min-width: 768px){
+    body{
+        background: url("assets/images/bg-pattern-desktop.svg") no-repeat center/cover;
+        overflow-y: hidden;
+    }
+
+    .main-container{
+        margin-top: 30px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-container picture img{
+        position: relative;
+        height: 88.7%;
+        left: 21.5px;
+        margin-top: -70px;
+        margin-left: 510px;
+    }
+
+    .main-container h1{
+        margin-left: -985px;
+        margin-top: 175px;
+        text-align: left;
+    }
+
+    .description{
+        margin-top: 350px;
+        position: relative;
+        text-align: left;
+        left: -310px;
+    }
+
+    .description-break-1{
+        position: relative;
+        top: 25px;
+        left: -399px;
+    }
+
+    .description-break-2{
+        position: relative;
+        top: 25px;
+    }
+
+    form{
+        position: relative;
+        left: -1075px;
+        top: 425px;
+    }
+
+    form input{
+        width: 260%;
+    }
+
+    .error{
+        text-align: left;
+    }
+
+    #error-break{
+        position: relative;
+        left: 123px;
+        top: -25px;
+    }
+
+    form button{
+        position: absolute;
+        top: 30px;
+        right: -260px;
+    }
+
+    form label{
+        position: absolute;
+        top: 41px;
+        right: -150px;
+    }
+
+
+
+
+
+
+}
